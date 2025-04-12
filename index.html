@@ -62,8 +62,7 @@
           </a>
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-          <div class="flex items-center gap-x-4"><a href="#"
-              class="px-4 py-2 text-sm font-medium capitalize transition-colors duration-200 border border-gray-200 rounded-lg dark:border-gray-800 dark:text-gray-300 dark:hover:bg-gray-800 text-zinc-700 hover:bg-gray-100">دخول</a>
+          <div class="flex items-center gap-x-4">
             <button type="button" id="mode-toggle"
               class="flex items-center justify-center w-6 h-6 transition rounded-md hover:bg-gray-900/5 dark:hover:bg-white/5"
               aria-label="Toggle dark mode">
@@ -106,22 +105,36 @@
 هنا يجي دور "حكيم" — مساعدك الذكي اللي يعرّفك على وضعك الصحي، ويقولك وش الفحوصات والبرامج الوقائية اللي تناسب عمرك وجنسك، وكل هالكلام مبني على توصيات طبية موثوقة وبأسلوب سهل وواضح. و يعطيك التوصيات بشكل سجل طبي تقدر تحمله و تحفظه معاك و تاخذه معاك لموعدك القادم مع طبيبك
                   <br>
                   <br>
-                  "حكيم" مو بس يسهّل عليك الفحوصات، بعد يربطك بأقرب مراكز الفحص اللي تناسبك، و يعطيك معلومات عنهم، و كمان يذكرك بمواعيد الفحص. يعني كل شي صار أسهل وأسرع بفضل "حكيم". 
+
+
                 </p>
                 <div class="flex items-center mt-10 gap-x-6">
-                  <a class="rounded-lg duration-200 transition-colors bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                    href="#contact">ابدأ الآن</a>
+                  <a 
+                    class="group relative inline-flex items-center justify-center rounded-lg bg-indigo-600 px-8 py-3 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:bg-indigo-500 hover:shadow-indigo-200 dark:hover:shadow-indigo-900 hover:scale-105 hover:-translate-y-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 overflow-hidden"
+                    href="https://medical-assistant-ecru.vercel.app/"
+                    target="_blank"
+                  >
+                    <span class="relative z-10">جرب حكيم الآن</span>
+                    <div class="absolute inset-0 z-0 bg-gradient-to-r from-indigo-600 to-indigo-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="absolute -inset-1 z-0 bg-gradient-to-r from-indigo-200 to-indigo-100 dark:from-indigo-900 dark:to-indigo-800 opacity-0 group-hover:opacity-20 blur transition-all duration-300"></div>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
           <div class="w-full mt-20 sm:mt-24 md:mx-auto md:max-w-2xl lg:max-w-3xl lg:mx-0 lg:mt-0 lg:w-screen">
-            <div
-              class="absolute inset-y-0 right-1/2 -z-10 -mr-10 w-[200%] skew-x-[-30deg] bg-white dark:bg-gray-950 dark:ring-gray-800 dark:shadow-indigo-900/20 shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 md:-mr-20 lg:-mr-36"
-              aria-hidden="true"></div>
-            <img alt="Header Image" loading="lazy" width="1471" height="1036" decoding="async" data-nimg="1"
-              class="object-cover w-full h-full rounded-2xl" style="color:transparent"
-              src="assets/images/img01.jpg" />
+            <div class="absolute inset-y-0 right-1/2 -z-10 -mr-10 w-[200%] skew-x-[-30deg] bg-white dark:bg-gray-950 dark:ring-gray-800 dark:shadow-indigo-900/20 shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 md:-mr-20 lg:-mr-36" aria-hidden="true"></div>
+            <img 
+              alt="Header Image" 
+              loading="lazy" 
+              width="1471" 
+              height="1036"
+              decoding="async" 
+              data-nimg="1" 
+              class="object-cover w-full h-full rounded-2xl max-h-[600px]" 
+              style="color:transparent"
+              src="assets/images/img01.png" 
+            />
           </div>
         </div>
         <div class="absolute inset-x-0 bottom-0 h-24 -z-10 bg-gradient-to-t from-white dark:from-gray-950 sm:h-32">
@@ -145,10 +158,43 @@
               نكون مرجعك الأول للصحة في السعودية
             </p>
           </div>
+          <div class="mt-8 flex justify-center">
+            <div class="relative max-w-2xl w-3/4">
+              <img 
+                src="assets/images/medical01.png" 
+                alt="صورة توضيحية"
+                class="w-full h-auto rounded-2xl shadow-lg"
+                loading="lazy"
+                width="600"
+                height="338"
+                decoding="async"
+                fetchpriority="high"
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- قسم الفيديو -->
+      <div class="py-8 overflow-hidden sm:py-24 lg:mt-6">
+        <div class="px-6 mx-auto max-w-7xl lg:px-8">
+          <div class="mx-auto text-center lg:max-w-2xl lg:pb-8">
+            <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-400 sm:text-4xl">شاهد كيف يعمل حكيم</h2>
+            <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
+              تعرف على كيفية استخدام منصة حكيم للفحوصات الطبية والوقاية الصحية
+            </p>
+          </div>
           <div class="mt-8">
-            <img alt="" loading="lazy" width="1202" height="465" decoding="async" data-nimg="1"
-              class="object-cover w-full h-full" style="width: 70%;margin:20px auto;border-radius: 15px;"
-              src="assets/images/medical01.jpg" />
+            <div class="relative w-full max-w-4xl mx-auto" style="padding-top: 42.25%;">
+              <iframe 
+                class="absolute top-0 left-0 w-full h-full rounded-2xl"
+                src="https://www.youtube.com/embed/5x3ABwUiX4E"
+                title="فيديو تعريفي عن حكيم"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
           </div>
         </div>
       </div>
@@ -185,9 +231,15 @@
             </div>
           </div>
           <div class="mt-8">
-            <img alt="" loading="lazy" width="1202" height="465" decoding="async" data-nimg="1"
-              class="object-cover w-full h-full" style="width: 70%;margin:20px auto;border-radius: 15px;"
-              src="assets/images/laptop.jpg" />
+            <div class="relative">
+              <img src="assets/images/laptop.png" alt="صورة توضيحية"
+                class="aspect-[3/2] w-full bg-gray-100 object-cover sm:aspect-[4/3] lg:aspect-[16/9] rounded-2xl"
+                loading="lazy"
+                width="800"
+                height="600"
+                decoding="async"
+                fetchpriority="high">
+            </div>
           </div>
         </div>
       </div>
@@ -265,7 +317,11 @@
         <div class="xl:grid xl:grid-cols-5 xl:gap-20 2xl:gap-32">
           <div class="space-y-8 xl:col-span-2">
             <a href="index.html"><span class="sr-only">Hakeem</span>
-              <img src="assets/images/Hakeem-logo01.png" width="90" alt="">
+              <img src="assets/images/Hakeem-logo01.png" width="90" alt="شعار حكيم"
+                loading="lazy"
+                decoding="async"
+                srcset="assets/images/Hakeem-logo01-small.png 45w, assets/images/Hakeem-logo01.png 90w"
+                sizes="(max-width: 45px) 45px, 90px">
             </a>
             <p class="text-sm leading-6 text-gray-600 dark:text-gray-400">
               هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
@@ -303,7 +359,7 @@
                 </svg>
               </a>
               </div>
-              <img src="/assets/images/madeInSA_logo.svg" width="160" alt="Made in SA">
+              <img src="assets/images/madeInSA_logo.svg" width="160" alt="Made in SA">
           </div>
           <div class="grid gap-8 mt-16 sm:grid-cols-2 md:grid-cols-4 xl:col-span-3 xl:mt-0">
             <div>

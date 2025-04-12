@@ -99,9 +99,8 @@
             style="position:fixed;top:1px;left:1px;width:1px;height:0;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border-width:0;display:none"></span>
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-          <div class="flex items-center gap-x-4"><a href="#"
-              class="px-4 py-2 text-sm font-medium capitalize transition-colors duration-200 border border-gray-200 rounded-lg dark:border-gray-800 dark:text-gray-300 dark:hover:bg-gray-800 text-zinc-700 hover:bg-gray-100">دخول</a>
-              <button type="button" id="mode-toggle"
+          <div class="flex items-center gap-x-4">
+            <button type="button" id="mode-toggle"
               class="flex items-center justify-center w-6 h-6 transition rounded-md hover:bg-gray-900/5 dark:hover:bg-white/5"
               aria-label="Toggle dark mode"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"
                 class="w-5 h-5 stroke-gray-900 dark:hidden">
@@ -137,10 +136,14 @@
                   </p>
                 </div>
                 <h1 class="mt-6 text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl">
-                  مدونة حكيم
+                  مدونة حكيم: عشان تفهم صحتك ببساطة.
                 </h1>
                 <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-400">
-                  هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                  مو بس نساعدك تعرف وش الفحوصات اللي تناسبك، حنا بعد نشرح لك ليش تحتاجها، وش معناها، وش آخر التحديثات الطبية عنها.
+
+في مدونة "حكيم"، بنسولف بلغة بسيطة عن مواضيع تهمك: من السكر والضغط، لفحوصات السرطان، لصحة العائلة، وأشياء كثير ممكن تغيّر نظرتك للطب الوقائي.
+
+كل تدوينة مكتوبة بأسلوب واثق وسهل، وبمصادر موثوقة، عشان نساعدك تكون "أنت" الحكيم في صحتك.
                 </p>
                 <div class="flex items-center mt-10 gap-x-6">
                   <a
@@ -156,151 +159,274 @@
               aria-hidden="true"></div>
               <img alt="Header Image" loading="lazy" width="1471" height="1036"
               decoding="async" data-nimg="1" class="object-cover w-full h-full rounded-2xl" style="color:transparent"
-              src="assets/images/img01.jpg" />
+              src="assets/images/article.png" 
+              srcset="assets/images/article-small.webp 400w, assets/images/article-medium.webp 800w, assets/images/article.png 1200w"
+              sizes="(max-width: 400px) 400px, (max-width: 800px) 800px, 1200px" />
           </div>
         </div>
         <div class="absolute inset-x-0 bottom-0 h-24 -z-10 bg-gradient-to-t from-white dark:from-gray-950 sm:h-32">
         </div>
       </div>
 
-      
-
-
-      <section class="bg-gray-50 dark:bg-gray-900 py-16">
-        <div class="max-w-6xl mx-auto px-6 lg:px-8">
-    
-            <!-- Featured Blogs -->
-            <div class="mb-12" id="featured">
-                <h2 class="text-3xl font-bold text-gray-900 dark:text-white" style="margin-bottom: 20px;">المقالات المميزة</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
-                        <img src="https://picsum.photos/600/350?random=1" alt="Blog Image" class="w-full h-56 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold text-gray-800 mb-3">ليه الفحص المبكر مهم؟</h3>
-                            <p class="text-gray-600 mb-4">وقبل لا تسأل الطبيب... اسأل نفسك: هل فحصت؟...</p>
-                            <a href="blog1.html" class="text-indigo-600 font-semibold hover:underline">اقرأ المزيد</a>
-                        </div>
-                    </div>
-                    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
-                        <img src="https://picsum.photos/600/350?random=2" alt="Blog Image" class="w-full h-56 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold text-gray-800 mb-3">كيف "حكيم" يساهم في تحسين جودة حياتك؟</h3>
-                            <p class="text-gray-600 mb-4">
-                              وش تعني “جودة الحياة” بالنسبة لك؟...</p>
-                            <a href="blog2.html" class="text-indigo-600 font-semibold hover:underline">اقرأ المزيد</a>
-                        </div>
-                    </div>
-                    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
-                        <img src="https://picsum.photos/600/350?random=3" alt="Blog Image" class="w-full h-56 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold text-gray-800 mb-3">أمي ما تفحص… كيف أفتح معها الموضوع؟</h3>
-                            <p class="text-gray-600 mb-4">الأم تهتم بالجميع… بس تنسى تهتم بنفسها...</p>
-                            <a href="blog3.html" class="text-indigo-600 font-semibold hover:underline">اقرأ المزيد</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Common Blogs -->
-            <div class="mb-12" id="common">
-                <h2 class="text-3xl font-bold text-gray-900 dark:text-white" style="margin-bottom: 20px;">المقالات الشائعة</h2>
-                <div class="space-y-6">
-                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md flex items-center gap-6">
-                        <img src="https://picsum.photos/150/100?random=4" alt="Blog Image" class="w-24 h-24 object-cover rounded-lg mr-6">
-                        <div>
-                            <h3 class="text-lg font-semibold text-gray-800 mb-2">من البيت… افحص صحتك بـ  5خطوات</h3>
-                            <p class="text-gray-600">في زمن السرعة، صار الوقت أغلى من الذهب...</p>
-                            <a href="blog4.html" class="text-indigo-600 font-semibold hover:underline">اقرأ المزيد</a>
-                        </div>
-                    </div>
-                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md flex items-center gap-6">
-                        <img src="https://picsum.photos/150/100?random=5" alt="Blog Image" class="w-24 h-24 object-cover rounded-lg mr-6">
-                        <div>
-                            <h3 class="text-lg font-semibold text-gray-800 mb-2">ارتفاع الدهون العائلي… لما تكون المشكلة ساكنة
-                              في الجينات</h3>
-                            <p class="text-gray-600">تقول: "أنا نحيف، آكل طبيعي، ما أدخن… وش جاب لي الكوليسترول؟"...</p>
-                            <a href="blog5.html" class="text-indigo-600 font-semibold hover:underline">اقرأ المزيد</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Last Created Blogs -->
-            <div class="mb-12" id="last">
-                <h2 class="text-3xl font-bold text-gray-900 dark:text-white" style="margin-bottom: 20px;">أحدث المقالات</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
-                        <img src="https://picsum.photos/600/350?random=6" alt="Blog Image" class="w-full h-56 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold text-gray-800 mb-3">عنوان المقال الجديد</h3>
-                            <p class="text-gray-600 mb-4">هذا النص هو مثال لمحتوى أحدث المقالات...</p>
-                            <a href="#" class="text-indigo-600 font-semibold hover:underline">اقرأ المزيد</a>
-                        </div>
-                    </div>
-                    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
-                        <img src="https://picsum.photos/600/350?random=7" alt="Blog Image" class="w-full h-56 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold text-gray-800 mb-3">عنوان المقال الجديد</h3>
-                            <p class="text-gray-600 mb-4">هذا النص هو مثال لمحتوى أحدث المقالات...</p>
-                            <a href="#" class="text-indigo-600 font-semibold hover:underline">اقرأ المزيد</a>
-                        </div>
-                    </div>
-                    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
-                        <img src="https://picsum.photos/600/350?random=8" alt="Blog Image" class="w-full h-56 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold text-gray-800 mb-3">عنوان المقال الجديد</h3>
-                            <p class="text-gray-600 mb-4">هذا النص هو مثال لمحتوى أحدث المقالات...</p>
-                            <a href="#" class="text-indigo-600 font-semibold hover:underline">اقرأ المزيد</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-        </div>
-    </section>
-    
-
-
-    <section id="contact" class="bg-gray-50 dark:bg-gray-900 py-16">
-      <div class="max-w-6xl mx-auto px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 bg-white dark:bg-gray-800 p-10 rounded-2xl shadow-lg">
-          
-          <!-- Contact Form -->
-          <div>
-            <h2 class="text-4xl font-bold text-gray-900 mb-8">اتصل بنا</h2>
-            <form action="#" method="POST" class="space-y-6">
-              <div>
-                <label class="block text-gray-700 font-medium mb-1">الاسم</label>
-                <input type="text" class="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-200 focus:ring focus:ring-indigo-400 dark:focus:ring-indigo-500 transition-all duration-200" placeholder="اكتب اسمك" required>
-              </div>
-              <div>
-                <label class="block text-gray-700 font-medium mb-1">البريد الالكتروني</label>
-                <input type="email" class="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-200 focus:ring focus:ring-indigo-400 dark:focus:ring-indigo-500 transition-all duration-200" placeholder="اكتب بريدك الالكتروني" required>
-              </div>
-              <div>
-                <label class="block text-gray-700 font-medium mb-1">الرسالة</label>
-                <textarea rows="4" class="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-200 focus:ring focus:ring-indigo-400 dark:focus:ring-indigo-500 transition-all duration-200" placeholder="اكتب رسالتك" required></textarea>
-              </div>
-              <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-500 dark:bg-indigo-500 dark:hover:bg-indigo-400 text-white font-semibold py-3 rounded-lg shadow-md transition-all duration-300">ارسال</button>
-            </form>
-          </div>
-    
-          <!-- Contact Info -->
-          <div class="bg-indigo-50 dark:bg-gray-700 p-8 rounded-2xl shadow-md flex flex-col justify-center">
-            <h3 class="text-3xl font-semibold text-indigo-700 dark:text-indigo-400 mb-6">معلومات الاتصال</h3>
-            <p class="text-gray-700 mb-6 leading-relaxed">
-              لا تتردد في التواصل معنا لأي استفسارات أو مساعدة، نحن هنا لخدمتك.
+      <div class="mt-8">
+        <div class="mx-auto px-6 lg:px-8 mt-12">
+          <div class="mx-auto text-center">
+            <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl">فيديو تعريفي</h2>
+            <p class="mt-2 text-lg leading-8 text-gray-600 dark:text-gray-400">
+              شاهد كيف يمكن لحكيم أن يساعدك في رحلتك الصحية
             </p>
-            <div class="space-y-8">
-              <p class="flex items-center text-gray-800 text-lg"><span class="mr-3">📍</span> 123 شارع، المدينة، البلد</p>
-              <p class="flex items-center text-gray-800 text-lg"><span class="mr-3">📞</span> +123 456 7890</p>
-              <p class="flex items-center text-gray-800 text-lg"><span class="mr-3">✉️</span> contact@example.com</p>
+          </div>
+          <div class="mt-8 flex justify-center">
+            <!-- تحديد عرض وارتفاع ثابتين للنافذة -->
+            <div class="relative" style="width: 800px; height: 450px;">
+              <iframe 
+                class="absolute top-0 left-0 w-full h-full rounded-2xl"
+                src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                title="فيديو تعريفي عن حكيم"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
             </div>
           </div>
-    
         </div>
       </div>
-    </section>
+
+      <!-- المقالات المميزة -->
+      <section id="featured" class="bg-white dark:bg-gray-900 py-16">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mx-auto max-w-2xl text-center">
+            <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl">المقالات المميزة</h2>
+            <p class="mt-2 text-lg leading-8 text-gray-600 dark:text-gray-400">
+              أهم المقالات التي تساعدك في رحلتك الصحية
+            </p>
+          </div>
+          <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+            <!-- مقال 1 -->
+            <article class="flex flex-col items-start">
+              <div class="relative w-full">
+                <img 
+                  src="assets/images/blog1-small.png" 
+                  alt="صورة المقال"
+                  class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover"
+                  loading="lazy"
+                  width="800"
+                  height="450"
+                  decoding="async"
+                >
+              </div>
+              <div class="max-w-xl">
+                <div class="mt-8 flex items-center gap-x-4 text-xs">
+                  <time datetime="2024-03-16" class="text-gray-500 dark:text-gray-400">16 مارس, 2024</time>
+                </div>
+                <div class="group relative">
+                  <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 dark:text-gray-100 group-hover:text-gray-600">
+                    <a href="blog1.html">
+                      <span class="absolute inset-0"></span>
+                      ليه الفحص المبكر مهم؟
+                    </a>
+                  </h3>
+                  <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600 dark:text-gray-400">وقبل لا تسأل الطبيب... اسأل نفسك: هل فحصت؟..</p>
+                </div>
+              </div>
+            </article>
+
+            <!-- مقال 2 -->
+            <article class="flex flex-col items-start">
+              <div class="relative w-full">
+                <img 
+                  src="assets/images/medical01.png" 
+                  alt="صورة المقال"
+                  class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover"
+                  loading="lazy"
+                  width="800"
+                  height="450"
+                  decoding="async"
+                >
+              </div>
+              <div class="max-w-xl">
+                <div class="mt-8 flex items-center gap-x-4 text-xs">
+                  <time datetime="2024-03-16" class="text-gray-500 dark:text-gray-400">16 مارس, 2024</time>
+                </div>
+                <div class="group relative">
+                  <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 dark:text-gray-100 group-hover:text-gray-600">
+                    <a href="blog2.html">
+                      <span class="absolute inset-0"></span>
+                      كيف "حكيم" يساهم في تحسين جودة حياتك؟
+                    </a>
+                  </h3>
+                  <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600 dark:text-gray-400">نصائح بسيطة وعملية لتحسين نمط حياتك وصحتك العامة.</p>
+                </div>
+              </div>
+            </article>
+
+            <!-- مقال 3 -->
+            <article class="flex flex-col items-start">
+              <div class="relative w-full">
+                <img 
+                  src="assets/images/laptop.png" 
+                  alt="صورة المقال"
+                  class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover"
+                  loading="lazy"
+                  width="800"
+                  height="450"
+                  decoding="async"
+                >
+              </div>
+              <div class="max-w-xl">
+                <div class="mt-8 flex items-center gap-x-4 text-xs">
+                  <time datetime="2024-03-16" class="text-gray-500 dark:text-gray-400">16 مارس, 2024</time>
+                </div>
+                <div class="group relative">
+                  <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 dark:text-gray-100 group-hover:text-gray-600">
+                    <a href="blog3.html">
+                      <span class="absolute inset-0"></span>
+                      أمي ما تفحص… كيف أفتح معها الموضوع؟
+                    </a>
+                  </h3>
+                  <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600 dark:text-gray-400">في كثير بيوت عندنا، الأم تهتم بالجميع… بس تنسى تهتم بنفسها.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- المقالات الشائعة -->
+      <section id="common" class="bg-gray-50 dark:bg-gray-800 py-16">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mx-auto max-w-2xl text-center">
+            <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl">المقالات الشائعة</h2>
+            <p class="mt-2 text-lg leading-8 text-gray-600 dark:text-gray-400">
+              المقالات الأكثر قراءة من قبل زوارنا
+            </p>
+          </div>
+          <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+            <!-- مقال 4 -->
+            <article class="flex flex-col items-start">
+              <div class="relative w-full">
+                <img src="https://picsum.photos/800/400?4" alt="صورة المقال"
+                  class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]">
+              </div>
+              <div class="max-w-xl">
+                <div class="mt-8 flex items-center gap-x-4 text-xs">
+                  <time datetime="2024-03-16" class="text-gray-500 dark:text-gray-400">16 مارس, 2024</time>
+                </div>
+                <div class="group relative">
+                  <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 dark:text-gray-100 group-hover:text-gray-600">
+                    <a href="blog4.html">
+                      <span class="absolute inset-0"></span>
+                      السكري والقلب… علاقة خطيرة!
+                    </a>
+                  </h3>
+                  <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600 dark:text-gray-400">ما تستهين بالسكري… لأنه ما يجي لحاله!</p>
+                </div>
+              </div>
+            </article>
+
+            <!-- مقال 5 -->
+            <article class="flex flex-col items-start">
+              <div class="relative w-full">
+                <img src="https://picsum.photos/800/400?5" alt="صورة المقال"
+                  class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]">
+              </div>
+              <div class="max-w-xl">
+                <div class="mt-8 flex items-center gap-x-4 text-xs">
+                  <time datetime="2024-03-16" class="text-gray-500 dark:text-gray-400">16 مارس, 2024</time>
+                </div>
+                <div class="group relative">
+                  <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 dark:text-gray-100 group-hover:text-gray-600">
+                    <a href="blog5.html">
+                      <span class="absolute inset-0"></span>
+                      ارتفاع الدهون العائلي… لما تكون المشكلة ساكنة
+                    </a>
+                  </h3>
+                  <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600 dark:text-gray-400">تقول: "أنا نحيف، آكل طبيعي، ما أدخن… وش جاب لي الكوليسترول؟"</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- أحدث المقالات -->
+      <section id="last" class="bg-white dark:bg-gray-900 py-16">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mx-auto max-w-2xl text-center">
+            <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl">أحدث المقالات</h2>
+            <p class="mt-2 text-lg leading-8 text-gray-600 dark:text-gray-400">
+              آخر المقالات المضافة إلى مدونتنا
+            </p>
+          </div>
+          <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+            <!-- مقال 3 -->
+            <article class="flex flex-col items-start">
+              <div class="relative w-full">
+                <img src="https://picsum.photos/800/400?3" alt="صورة المقال"
+                  class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]">
+              </div>
+              <div class="max-w-xl">
+                <div class="mt-8 flex items-center gap-x-4 text-xs">
+                  <time datetime="2024-03-16" class="text-gray-500 dark:text-gray-400">16 مارس, 2024</time>
+                </div>
+                <div class="group relative">
+                  <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 dark:text-gray-100 group-hover:text-gray-600">
+                    <a href="blog3.html">
+                      <span class="absolute inset-0"></span>
+                      أمي ما تفحص… كيف أفتح معها الموضوع؟
+                    </a>
+                  </h3>
+                  <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600 dark:text-gray-400">في كثير بيوت عندنا، الأم تهتم بالجميع… بس تنسى تهتم بنفسها.</p>
+                </div>
+              </div>
+            </article>
+
+            <!-- مقال 4 -->
+            <article class="flex flex-col items-start">
+              <div class="relative w-full">
+                <img src="https://picsum.photos/800/400?4" alt="صورة المقال"
+                  class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]">
+              </div>
+              <div class="max-w-xl">
+                <div class="mt-8 flex items-center gap-x-4 text-xs">
+                  <time datetime="2024-03-16" class="text-gray-500 dark:text-gray-400">16 مارس, 2024</time>
+                </div>
+                <div class="group relative">
+                  <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 dark:text-gray-100 group-hover:text-gray-600">
+                    <a href="blog4.html">
+                      <span class="absolute inset-0"></span>
+                      السكري والقلب… علاقة خطيرة!
+                    </a>
+                  </h3>
+                  <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600 dark:text-gray-400">ما تستهين بالسكري… لأنه ما يجي لحاله!</p>
+                </div>
+              </div>
+            </article>
+
+            <!-- مقال 5 -->
+            <article class="flex flex-col items-start">
+              <div class="relative w-full">
+                <img src="https://picsum.photos/800/400?5" alt="صورة المقال"
+                  class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]">
+              </div>
+              <div class="max-w-xl">
+                <div class="mt-8 flex items-center gap-x-4 text-xs">
+                  <time datetime="2024-03-16" class="text-gray-500 dark:text-gray-400">16 مارس, 2024</time>
+                </div>
+                <div class="group relative">
+                  <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 dark:text-gray-100 group-hover:text-gray-600">
+                    <a href="blog5.html">
+                      <span class="absolute inset-0"></span>
+                      ارتفاع الدهون العائلي… لما تكون المشكلة ساكنة
+                    </a>
+                  </h3>
+                  <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600 dark:text-gray-400">تقول: "أنا نحيف، آكل طبيعي، ما أدخن… وش جاب لي الكوليسترول؟"</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
 
     </main>
     <footer aria-labelledby="footer-heading">
